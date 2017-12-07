@@ -1,15 +1,16 @@
 ---
-title: The Case of the Italian Olives
+title: Diagnose Alzheimer?s Disease by Magnetic resonance imaging (MRI)
 ---
 
-This is the home page
+## Problem Statement and Motivation
 
-## Lets have fun
+**Alzheimer?s Disease(AD)** is a chronic neurodegenerative disease that starts with neuron degeneration, which then cause large scale change in brain structure$^{1}$. Since volumetric and functional magnetic resonance imaging have proved to represent robust biomarkers for the evaluation of anti-Alzheimer treatments$^{2}$, we decided to diagnose AD via **magnetic resonance imaging(MRI)**.
 
->here is a quote
+## Revised Project Question
+Given the data sets suffer from a lot of **missing follow-up data**, we focused our main research question on building classifier models for patients? **baseline diagnosis** using patients? **brain imaging data from their first visits**, *adjusting for basic demographic information.*
 
-Here is *emph* and **bold**.
+>References:
+>1. Jack, C.R., Knopman, D.S., Jagust, W.J., Shaw, L.M., Aisen, P.S., Weiner, M.W., Petersen, R.C. and Trojanowski, J.Q., 2010. Hypothetical model of dynamic biomarkers of the Alzheimer's pathological cascade. The Lancet Neurology, 9(1), pp.119-128.
+>2. Ciumas, C., Montavont, A. and Ryvlin, P., 2008. Magnetic resonance imaging in clinical trials. Current opinion in neurology, 21(4), pp.431-436.
 
-Here is some inline math $\alpha = \frac{\beta}{\gamma}$ and, of-course, E rules:
 
-$$ G_{\mu\nu} + \Lambda g_{\mu\nu}  = 8 \pi T_{\mu\nu} . $$
