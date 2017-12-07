@@ -1,15 +1,15 @@
 ---
-title: Diagnose Alzheimer?s Disease by Magnetic resonance imaging (MRI)
+title: Diagnose Alzheimer's Disease by Magnetic resonance imaging (MRI)
 ---
 
 
 ## Problem Statement and Motivation
 
 
-**Alzheimer?s Disease(AD)** is a chronic neurodegenerative disease that starts with neuron degeneration, which then cause large scale change in brain structure$^{1}$. Since volumetric and functional magnetic resonance imaging have proved to represent robust biomarkers for the evaluation of anti-Alzheimer treatments$^{2}$, we decided to diagnose AD via **magnetic resonance imaging(MRI)**.
+**Alzheimer's Disease(AD)** is a chronic neurodegenerative disease that starts with neuron degeneration, which then cause large scale change in brain structure$^{1}$. Since volumetric and functional magnetic resonance imaging have proved to represent robust biomarkers for the evaluation of anti-Alzheimer treatments$^{2}$, we decided to diagnose AD via **magnetic resonance imaging(MRI)**.
 
 
-## Revised Project Question
+## Research Question
 
 Given the data sets suffer from a lot of **missing follow-up data**, we focused our main research question on building classifier models for patients? **baseline diagnosis** using patients? **brain imaging data from their first visits**, *adjusting for basic demographic information.*
 
