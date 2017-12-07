@@ -1,7 +1,7 @@
 ---
 title: EDA
 notebook: olives-eda.ipynb
-nav_include: 1
+nav_include: 1 
 ---
 
 ## Contents
@@ -12,20 +12,11 @@ nav_include: 1
 
 
 
-```python
-%matplotlib inline
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
-import seaborn as sns
-pd.set_option('display.width', 500)
-pd.set_option('display.max_columns', 100)
-```
 
 
 ## Italian Olives
 
-![](Italy.png)
+![](Tree_Graph.png)
 
 I found this data set in the RGGobi book (http://www.ggobi.org/book/), from which the above diagram is taken. It has "the percentage composition of fatty acids
 found in the lipid fraction of Italian olive oils', with oils from 3 regions of Italy: the North, the South, and Sardinia. The regions themselves are subdivided into areas as shown in the map above. The source for this data is:
@@ -38,10 +29,6 @@ Publishers, London, pp. 189–214.
 
 
 
-```python
-df = pd.read_csv("local-olives-cleaned.csv")
-df.head()
-```
 
 
 
@@ -165,9 +152,6 @@ df.head()
 
 
 
-```python
-pd.crosstab(df.areastring, df.regionstring)
-```
 
 
 
@@ -265,9 +249,6 @@ pd.crosstab(df.areastring, df.regionstring)
 
 
 
-```python
-pd.value_counts(df.areastring, sort=False).plot(kind="bar");
-```
 
 
 
@@ -276,9 +257,6 @@ pd.value_counts(df.areastring, sort=False).plot(kind="bar");
 
 
 
-```python
-pd.value_counts(df.regionstring, sort=False).plot(kind="barh");
-```
 
 
 
@@ -287,10 +265,6 @@ pd.value_counts(df.regionstring, sort=False).plot(kind="barh");
 
 
 
-```python
-acidlist=['palmitic', 'palmitoleic', 'stearic', 'oleic', 'linoleic', 'linolenic', 'arachidic', 'eicosenoic']
-df[acidlist].median().plot(kind="bar");
-```
 
 
 
@@ -301,10 +275,6 @@ Or one can use `aggregate` to pass an arbitrary function of to the sub-dataframe
 
 
 
-```python
-dfbymean=df.groupby("regionstring").aggregate(np.mean)
-dfbymean.head()
-```
 
 
 
@@ -401,11 +371,6 @@ dfbymean.head()
 
 
 
-```python
-with sns.axes_style("white", {'grid':False}):
-    dfbymean[acidlist].plot(kind='barh', stacked=True);
-    sns.despine()
-```
 
 
 
